@@ -6,3 +6,4 @@ Deny from all
 
 RewriteEngine on
 RewriteRule login login.html
+DirectoryIndex index.html
