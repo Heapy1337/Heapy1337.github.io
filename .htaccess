@@ -7,3 +7,7 @@ Deny from all
 RewriteEngine on
 RewriteRule login login.html
 DirectoryIndex index.html
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*).html$ /$1 [L,R=301]
